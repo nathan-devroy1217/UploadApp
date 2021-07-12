@@ -12,4 +12,4 @@ RUN mkdir -p /root/.ssh && \
     chmod 600 /root/.ssh/id_rsa
 
 EXPOSE 8888
-ENTRYPOINT ["java","-jar","/app.jar"]
+CMD ["java","-jar","/app.jar"]
