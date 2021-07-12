@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: upload
+  cloud:
+    vault:
+      host: localhost
+      port: 8200
+      scheme: http
+      kv:
+        enabled: true
+      token: s.6dDTbDokyQ7uM7lrlo4FfeD8

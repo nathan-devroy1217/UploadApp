@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+sftp:
+  remoteHost: 192.168.1.100
+  userName: pi
+  password: Elijah1027
+  knownHosts: /root/.ssh/known_hosts
+
+local:
+  fileLocation: foo
+
+spring:
+  mvc:
+    async:
+      request-timeout: 2000
+  cloud:
+    bootstrap:
+      enabled: true
