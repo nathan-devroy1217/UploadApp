@@ -1,6 +1,7 @@
 FROM adoptopenjdk/openjdk11:latest
 MAINTAINER Nathan Devroy
 VOLUME /main-app
+RUN gradle build
 ADD build/libs/upload-0.0.1-SNAPSHOT.jar app.jar
 ARG PRIVATE_SSH_KEY
 RUN  apt-get -yq update && \
